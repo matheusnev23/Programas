@@ -32,6 +32,7 @@ funcao = {
 try:
     with sr.Microphone(0) as mic:
         #Esse comando se refere ao microfone que você está usando, é possível mudar conforme necessidade
+        #O código para reconhecer o microfone está com o nome de microfones
         rec.adjust_for_ambient_noise(mic)
         print("Pode falar que irei reconhecer")
         audio = rec.listen(mic)
